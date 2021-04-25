@@ -9,7 +9,7 @@ public class PiezaJ extends Pieza {
     @Override
     public String toString() {
         String msg = "Esta es una pieza J color ";
-        switch (this.color) {
+        switch (color) {
             case AMARILLO -> msg += "amarillo.\n";
             case MAGENTA -> msg += "magenta.\n";
             case NARANJA -> msg += "naranja.\n";

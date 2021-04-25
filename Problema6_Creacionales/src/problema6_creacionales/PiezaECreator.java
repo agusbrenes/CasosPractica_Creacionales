@@ -5,9 +5,32 @@ public class PiezaECreator extends PiezaCreator {
     
     @Override
     public Pieza createPieza(){
-        Color colors[] = Color.values();
-        int rand = (int)Math.floor(Math.random()*((colors.length - 1) - 0 + 1) + 0);
+        int rand = (int)Math.floor(Math.random()*(6 - 0 + 1) + 0);
+        Color c;
+        switch (rand) {
+            case 0:
+                c = Color.AMARILLO;
+                break;
+            case 1:
+                c = Color.MAGENTA;
+                break;
+            case 2:
+                c = Color.NARANJA;
+                break;
+            case 3:
+                c = Color.CELESTE;
+                break;
+            case 4:
+                c = Color.VERDE;
+                break;
+            case 5:
+                c = Color.AZUL;
+                break;
+            default:
+                c = Color.ROJO;
+                break;
+        }
         
-        return new PiezaE(colors[rand]);
+        return new PiezaE(c);
     }
 }

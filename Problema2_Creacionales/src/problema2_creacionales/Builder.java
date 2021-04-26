@@ -1,7 +1,17 @@
 package problema2_creacionales;
 
 public abstract class Builder {
+    protected Ventana ventana;
+    
     public Builder(){}
     
-    public abstract Ventana buildPart();
+    public Ventana getVentana() {
+        return ventana;
+    }
+    
+    public void createVentana() {
+        ventana = new Ventana();
+    }
+    
+    public abstract Ventana buildComponentes();
 }

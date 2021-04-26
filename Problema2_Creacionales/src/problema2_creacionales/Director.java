@@ -8,6 +8,6 @@ public class Director {
     }
     
     public Ventana construct(){
-        return this.builder.buildPart();
+        return this.builder.buildComponentes();
     }
 }

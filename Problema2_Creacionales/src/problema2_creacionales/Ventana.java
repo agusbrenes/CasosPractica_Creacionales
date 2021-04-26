@@ -11,7 +11,7 @@ public class Ventana {
     }
     
     public String toString() {
-        return "Ventana con componentes en modo" + componentsMode + ".\n";
+        return "Ventana con componentes en modo " + componentsMode + ".\n";
     }
 
 }

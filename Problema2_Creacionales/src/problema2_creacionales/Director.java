@@ -1,13 +1,20 @@
 package problema2_creacionales;
 
 public class Director {
-    public Builder builder;
+    private Builder builder;
     
-    public Director(Builder builder) {
+    public Director() {}
+    
+    public void setVentanaBuilder(Builder builder) {
         this.builder = builder;
     }
     
-    public Ventana construct(){
-        return this.builder.buildComponentes();
+    public Ventana getVentana() {
+        return builder.getVentana();
+    }
+    
+    public void construirVentana(){
+        builder.createVentana();
+        builder.buildComponentes();
     }
 }

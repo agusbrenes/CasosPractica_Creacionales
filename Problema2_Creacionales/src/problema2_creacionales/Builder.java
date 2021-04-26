@@ -13,5 +13,5 @@ public abstract class Builder {
         ventana = new Ventana();
     }
     
-    public abstract Ventana buildComponentes();
+    public abstract void buildComponentes();
 }
